@@ -50,7 +50,7 @@ export default function Hero() {
           <div className="relative mb-8">
             {!imageError ? (
               <img 
-                src="/aliwin-logo.png" 
+                src="https://i.ibb.co/Jw09MC8K/aliwin-logo.png" 
                 alt="Aliwin Logo" 
                 className="h-24 w-auto md:h-32 lg:h-40 object-contain drop-shadow-xl dark:invert transition-all duration-500"
                 onError={() => setImageError(true)}
@@ -59,7 +59,7 @@ export default function Hero() {
               <div className="flex flex-col items-center justify-center rounded-lg border-2 border-dashed border-neutral-400 dark:border-neutral-700 bg-neutral-100 dark:bg-neutral-800/50 p-8 text-center transition-colors duration-500">
                 <p className="mb-2 text-sm font-medium text-neutral-900 dark:text-neutral-100">Logo Missing</p>
                 <p className="text-xs text-neutral-500 dark:text-neutral-400">
-                  Upload <code>aliwin-logo.png</code> to <code>public/</code> folder
+                  Failed to load logo from external URL
                 </p>
                 {/* Fallback Text */}
                 <h1 className="mt-4 font-serif text-4xl font-bold tracking-tight text-neutral-900/50 dark:text-white/50">

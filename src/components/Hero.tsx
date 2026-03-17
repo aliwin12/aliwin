@@ -1,6 +1,6 @@
 import { motion } from 'motion/react';
 import { useState, useEffect } from 'react';
-import { Send, Bot, Youtube, Gamepad2, Moon, Sun } from 'lucide-react';
+import { Send, Bot, Youtube, Gamepad2, Moon, Sun, Globe } from 'lucide-react';
 
 export default function Hero() {
   const [imageError, setImageError] = useState(false);
@@ -154,6 +154,24 @@ export default function Hero() {
                 className="rounded-lg bg-neutral-800 px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-neutral-900 dark:bg-neutral-700 dark:hover:bg-neutral-600"
               >
                 Profile
+              </a>
+            </div>
+
+            {/* vlessfree */}
+            <div className="flex items-center justify-between gap-3 rounded-xl bg-white/60 dark:bg-white/5 p-3 shadow-sm backdrop-blur-sm transition-all hover:bg-white/80 dark:hover:bg-white/10 hover:shadow-md">
+              <div className="flex items-center gap-3">
+                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-emerald-100 dark:bg-emerald-900/50 text-emerald-600 dark:text-emerald-400 transition-colors duration-500">
+                  <Globe size={20} />
+                </div>
+                <span className="font-semibold text-neutral-700 dark:text-neutral-200 transition-colors duration-500">vlessfree:</span>
+              </div>
+              <a 
+                href="https://vlessfree.vercel.app/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="rounded-lg bg-emerald-600 px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-emerald-700 dark:bg-emerald-500 dark:hover:bg-emerald-600"
+              >
+                Visit Site
               </a>
             </div>
           </div>
